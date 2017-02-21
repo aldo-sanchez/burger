@@ -1,10 +1,11 @@
 var orm = require('../config/orm.js');
 
 module.exports = (app)=>{
-  app.get('/api/all', (req, res)=>{
-    var array = ['burger_name', 'burgers'];
+  app.get('/', (req, res)=>{
+    var columns = ['burger_name', 'devoured']
+    var array = [columns, 'burgers'];
     function cb(data){
-      res.send(data);
+      res.render('index', {data: data});
     };
     orm.selectAll(array, cb);
   });

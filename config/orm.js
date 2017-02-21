@@ -15,5 +15,10 @@ module.exports = {
       cb(data);
     });
   },
-  updateOne: function(){}
+  updateOne: function(array, cb){
+    connection.query('UPDATE ?? SET ?? = ? WHERE ?? = ?', array, (err, data)=>{
+      if(err){throw err};
+      cb(data);
+    })
+  }
 };
