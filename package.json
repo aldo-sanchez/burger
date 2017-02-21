@@ -4,5 +4,11 @@
   "main": "server.js",
   "repository": "https://github.com/aldo-sanchez/burger.git",
   "author": "Aldo Sanchez",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.16.1",
+    "express": "^4.14.1",
+    "express-handlebars": "^3.0.0",
+    "mysql": "^2.13.0"
+  }
 }
