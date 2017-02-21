@@ -1,0 +1,8 @@
+{
+  "name": "burger",
+  "version": "1.0.0",
+  "main": "server.js",
+  "repository": "https://github.com/aldo-sanchez/burger.git",
+  "author": "Aldo Sanchez",
+  "license": "MIT"
+}
