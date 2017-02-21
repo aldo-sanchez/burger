@@ -13,7 +13,7 @@ app.use(bodyParser.text());
 app.use(bodyParser.json({type: 'application/vnd.api+json'}));
 
 // Require Routes
-
+(require('./controllers/burgers_controller.js'))(app)
 
 // listener
 app.listen(PORT, function(){
